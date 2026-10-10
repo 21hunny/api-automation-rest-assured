@@ -1,0 +1,15 @@
+package org.example.model.quotes;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Quote {
+
+    private Integer id;
+    private String quote;
+    private String author;
+}
